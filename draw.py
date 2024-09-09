@@ -13,7 +13,7 @@ class App:
         self.root = root
         self.root.title("Draw a Digit")
         
-        self.canvas = tk.Canvas(self.root, width=600, height=600, bg='white')
+        self.canvas = tk.Canvas(self.root, width=300, height=400, bg='white')
         self.canvas.pack()
 
         # Bind mouse events to the canvas
@@ -30,7 +30,7 @@ class App:
     def paint(self, event):
         x1, y1 = (event.x - 5), (event.y - 5)
         x2, y2 = (event.x + 5), (event.y + 5)
-        self.canvas.create_oval(x1, y1, x2, y2, fill='black', width=5)
+        self.canvas.create_oval(x1, y1, x2, y2, fill='black', width=20)
 
     def clear_canvas(self):
         self.canvas.delete('all')
