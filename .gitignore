@@ -1,0 +1,14 @@
+# Ignore virtual environments
+myvenv/
+.venv/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore large libraries or compiled files
+*.dll
+*.pyd
